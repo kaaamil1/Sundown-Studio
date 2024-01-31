@@ -99,10 +99,6 @@ header nav ul li h4:hover::after {
 
 /* Main */
 
-#hero-section {
-    position: relative;
-}
-
 #hero-section .hero {
     height: 68vh;
     display: flex;
@@ -137,6 +133,21 @@ header nav ul li h4:hover::after {
     font-weight: 500;
     text-align: right;
     color: var(--black);
+}
+
+/* Hero Shape */
+
+.hero-shape {
+    position: absolute;
+    right: 0;
+}
+
+.hero-shape .shape1 {
+    width: 40vw;
+    height: 30vw;
+    /* border-radius: 50%; */
+    background-color: var(--orange);
+    /* filter: blur(20px); */
 }
 
 #hero-section video {
