@@ -155,14 +155,14 @@ header nav ul li h4:hover::after {
 }
 
 .hero-shape .shape1 {
-    width: 60vw;
+    width: 30vw;
     height: 30vw;
-    border-radius: 50% 0 0 50%;
+    border-radius: 50%;
     background-color: var(--orange);
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-1;
-    animation-duration: 3s;
+    animation-name: shape-3;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -170,10 +170,10 @@ header nav ul li h4:hover::after {
 
 @keyframes shape-1 {
     from {
-        transform: rotate(0deg);
+        transform: translate(10%, 10%);
     }
     to {
-        transform: rotate(-15deg);
+        transform: translate(0%, 0%);
     }
 }
 
@@ -201,14 +201,14 @@ header nav ul li h4:hover::after {
 }
 
 .hero-shape .shape3 {
-    width: 30vw;
+    width: 60vw;
     height: 30vw;
-    border-radius: 50%;
-    background-color: var(--orange);
+    border-radius: 50% 0 0 50%;
+    background: linear-gradient(to bottom right, var(--orange), var(--orange), var(--yellow));
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-3;
-    animation-duration: 5s;
+    animation-name: shape-1;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -216,10 +216,10 @@ header nav ul li h4:hover::after {
 
 @keyframes shape-3 {
     from {
-        transform: translate(10%, 10%);
+        transform: rotate(0deg);
     }
     to {
-        transform: translate(0%, 0%);
+        transform: rotate(-15deg);
     }
 }
 
