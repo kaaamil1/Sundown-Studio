@@ -107,6 +107,7 @@ header nav ul li h4:hover::after {
 
 #hero-section {
     position: relative;
+    margin-bottom: 10vh;
 }
 
 #hero-section .hero {
@@ -230,4 +231,32 @@ header nav ul li h4:hover::after {
     border-radius: 25px;
     margin-top: 4vw;
     position: relative;
+}
+
+
+/* Marquee Text */
+
+#moving-text {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#moving-text .anim-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#moving-text .anim-wrapper h1 {
+    font-size: 8vw;
+    font-weight: 500;
+    letter-spacing: -4.875px;
+    display: inline-block;
+}
+
+#moving-text .anim-wrapper .dot {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: var(--orange);
+    border-radius: 50%;
+    display: inline-block;
 }
