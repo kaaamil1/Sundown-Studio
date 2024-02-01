@@ -161,7 +161,7 @@ header nav ul li h4:hover::after {
     background-color: var(--orange);
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-3;
+    animation-name: shape-1;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-direction: alternate;
@@ -207,7 +207,7 @@ header nav ul li h4:hover::after {
     background: linear-gradient(to bottom right, var(--orange), var(--orange), var(--yellow));
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-1;
+    animation-name: shape-3;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;
