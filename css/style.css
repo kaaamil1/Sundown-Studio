@@ -237,13 +237,16 @@ header nav ul li h4:hover::after {
 /* Marquee Text */
 
 #moving-text {
-    overflow-x: scroll;
     white-space: nowrap;
 }
 
 #moving-text .anim-wrapper {
     display: inline-block;
     white-space: nowrap;
+    animation-name: moving-text;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #moving-text .anim-wrapper h1 {
@@ -259,4 +262,14 @@ header nav ul li h4:hover::after {
     background-color: var(--orange);
     border-radius: 50%;
     display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes moving-text {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
