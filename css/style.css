@@ -26,10 +26,6 @@ body {
     padding: 0 2.2em;
 }
 
-.relative {
-    position: relative;
-}
-
 
 /* Header */
 
@@ -107,7 +103,7 @@ header nav ul li h4:hover::after {
 
 #hero-section {
     position: relative;
-    margin-bottom: 10vh;
+    margin-bottom: 14vh;
 }
 
 #hero-section .hero {
@@ -162,14 +158,14 @@ header nav ul li h4:hover::after {
     background-color: var(--orange);
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-1;
+    animation-name: hero-shape-1;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes shape-1 {
+@keyframes hero-shape-1 {
     from {
         transform: translate(30%, 30%);
     }
@@ -185,14 +181,14 @@ header nav ul li h4:hover::after {
     background-color: var(--orange);
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-2;
+    animation-name: hero-shape-2;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes shape-2 {
+@keyframes hero-shape-2 {
     from {
         transform: translate(25%, -10%);
     }
@@ -208,14 +204,14 @@ header nav ul li h4:hover::after {
     background: linear-gradient(to bottom right, var(--orange), var(--orange), var(--yellow));
     filter: blur(20px);
     position: absolute;
-    animation-name: shape-3;
+    animation-name: hero-shape-3;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes shape-3 {
+@keyframes hero-shape-3 {
     from {
         transform: rotate(0deg) translate(15%, 0%);
     }
@@ -250,10 +246,11 @@ header nav ul li h4:hover::after {
 }
 
 #moving-text .anim-wrapper h1 {
-    font-size: 8vw;
+    font-size: 8.2vw;
     font-weight: 500;
     letter-spacing: -4.875px;
     display: inline-block;
+    color: var(--black);
 }
 
 #moving-text .anim-wrapper .dot {
@@ -273,3 +270,134 @@ header nav ul li h4:hover::after {
         transform: translateX(-100%);
     }
 }
+
+
+/* Intro Section */
+
+#intro-section {
+    position: relative;
+}
+
+#intro-section .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw 4vw;
+}
+
+#intro-section .left {
+    width: 58.8%;
+}
+
+#intro-section .left h1 {
+    font-size: 4.2vw;
+    font-weight: 500;
+    line-height: .99;
+    letter-spacing: -2.36786px;
+    color: var(--black);
+}
+
+#intro-section .right {
+    width: 20%;
+    padding-top: 8vw;
+}
+
+#intro-section .right img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#intro-section .right p {
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--black);
+    padding-top: 2vw;
+}
+
+
+/* Intro-Shape */
+
+#intro-section .left .intro-shape {
+    position: absolute;
+    top: 20vw;
+    left: 30%;
+    z-index: -1;
+}
+
+#intro-section .left .intro-shape .shape1 {
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(10px);
+    animation-name: intro-shape-1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes intro-shape-1 {
+    from {
+        transform: translate(-20%, 20%) skew(-5deg, -5deg);
+    }
+    to {
+        transform: translate(0%, -10%) skew(5deg, 5deg);
+    }
+}
+
+#intro-section .left .intro-shape .shape2 {
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    left: -2vw;
+    filter: blur(60px);
+    animation-name: intro-shape-2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes intro-shape-2 {
+    from {
+        transform: translate(-20%, 20%);
+    }
+    to {
+        transform: translate(0%, -10%);
+    }
+}
+
+
+/* Projects Section */
+
+/* #projects-section {
+    position: relative;
+    height: 100vh;
+}
+
+#projects-section .project {
+
+}
+
+#projects-section p {
+    font-size: 0.85vw;
+    font-weight: 400;
+    letter-spacing: 0.325px;
+}
+
+#projects-section p span {
+    font-size: 2vw;
+}
+
+#projects-section {
+
+}
+
+#projects-section {
+
+} */
