@@ -393,7 +393,7 @@ header nav ul li h4:hover::after {
     margin-right: 8px;
 }
 
-#projects-section p {
+#projects-section > p {
     font-size: 0.85vw;
     font-weight: 400;
     letter-spacing: 0.325px;
