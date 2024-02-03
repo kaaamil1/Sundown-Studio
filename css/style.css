@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    padding: 0 2.2em;
+    padding: 0 2vw;
 }
 
 
@@ -38,7 +38,7 @@ header {
 }
 
 header > a {
-    width: 11em;
+    width: 9vw;
 }
 
 header img {
@@ -47,7 +47,7 @@ header img {
 
 header nav ul {
     display: flex;
-    gap: 0.6em;
+    gap: 0.5vw;
 }
 
 header nav ul li {
@@ -55,19 +55,18 @@ header nav ul li {
 }
 
 header nav ul li h4 {
-    padding: 11.6071px 0;
+    padding: 0.7vw 0;
     font-weight: 100;
     position: relative;
     border-radius: 50px;
     border: 1px solid rgba(11, 5, 0, 0.2);
-    font-size: 18.5714px;
+    font-size: 1vw;
     font-weight: 400;
-    line-height: 26px;
     overflow: hidden;
 }
 
 header nav ul li h4 a {
-    padding: 11.6071px 27.8571px;
+    padding: 0.7vw 1.4vw;
     text-decoration: none;
     color: var(--black);
     transition: all ease .3s;
@@ -117,7 +116,7 @@ header nav ul li h4:hover::after {
 }
 
 #hero-section .hero .left {
-    width: 23%;
+    width: 24%;
 }
 
 #hero-section .hero .left h2 {
@@ -375,29 +374,34 @@ header nav ul li h4:hover::after {
 
 /* Projects Section */
 
-/* #projects-section {
+#projects-section {
     position: relative;
     height: 100vh;
 }
 
 #projects-section .project {
+    width: 100%;
+    height: ;
+}
 
+#projects-section .small-dot {
+    display: inline-block;
+    width: .45vw;
+    height: .45vw;
+    border-radius: 50%;
+    background-color: var(--orange);
+    margin-right: 8px;
 }
 
 #projects-section p {
     font-size: 0.85vw;
     font-weight: 400;
     letter-spacing: 0.325px;
-}
-
-#projects-section p span {
-    font-size: 2vw;
-}
-
-#projects-section {
-
+    display: flex;
+    align-items: center;
+    color: var(--black);
 }
 
 #projects-section {
 
-} */
+}
