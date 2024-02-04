@@ -339,7 +339,7 @@ header nav ul li h4:hover::after {
 
 @keyframes intro-shape-1 {
     from {
-        transform: translate(-20%, 20%) skew(-5deg, -5deg);
+        transform: translate(-20%, 12%) skew(-5deg, -5deg);
     }
     to {
         transform: translate(0%, -10%) skew(5deg, 5deg);
@@ -364,7 +364,7 @@ header nav ul li h4:hover::after {
 
 @keyframes intro-shape-2 {
     from {
-        transform: translate(-20%, 20%);
+        transform: translate(-20%, 12%);
     }
     to {
         transform: translate(0%, -10%);
@@ -394,16 +394,16 @@ header nav ul li h4:hover::after {
     color: var(--black);
 }
 
-#projects-section .project-wrapper {
+#projects-section #project-wrapper {
     margin-top: 3.8vw;
 }
 
-#projects-section .project-wrapper a {
+#projects-section #project-wrapper a {
     text-decoration: none;
     color: var(--black);
 }
 
-#projects-section .project-wrapper a .project {
+#projects-section #project-wrapper a .project {
     width: 100%;
     padding: 1.7vw 2vw;
     display: flex;
@@ -414,34 +414,63 @@ header nav ul li h4:hover::after {
     border-bottom: 1px solid rgb(179, 179, 179);
 }
 
-#projects-section .project-wrapper a .project .overlay {
+#projects-section #project-wrapper a .project .overlay {
     position: absolute;
     top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: var(--yellow);
-    transition: all ease 0.2s;
+    transition: all ease 0.25s;
     z-index: -1;
 }
 
-#projects-section .project-wrapper a .project:hover .overlay {
+#projects-section #project-wrapper a .project:hover .overlay {
     top: 0;
 }
 
-#projects-section .project-wrapper a .project h1 {
+#projects-section #project-wrapper a .project h1 {
     font-size: 3.1vw;
     letter-spacing: -1.81071px;
     font-weight: 500;
 }
 
-#projects-section .project-wrapper a .project p {
+#projects-section #project-wrapper a .project p {
     letter-spacing: 0.325px;
     font-weight: 400;
     text-align: right;
 }
 
-#projects-section .project-wrapper a .project p span {
+#projects-section #project-wrapper a .project p span {
     opacity: .4;
     letter-spacing: normal;
+}
+
+#project-layout-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+#project-layout {
+    width: 24.5vw;
+    height: 31vw;
+    position: fixed;
+    top: 9.2vw;
+    left: 49.7%;
+    z-index: 99;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+.project:hover #project-layout {
+    display: block;
+}
+
+#project-layout img,
+#project-layout video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
