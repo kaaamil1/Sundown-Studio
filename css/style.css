@@ -376,10 +376,9 @@ header nav ul li h4:hover::after {
 
 #projects-section {
     position: relative;
-    padding-bottom: 500px;
 }
 
-#projects-section .small-dot {
+.small-dot {
     display: inline-block;
     width: .45vw;
     height: .45vw;
@@ -473,4 +472,19 @@ header nav ul li h4:hover::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* Tabs Section */
+
+#tabs-section {
+    margin-top: 7.5vw;
+}
+
+#tabs-section {
+
+}
+
+#tabs-section {
+
 }
