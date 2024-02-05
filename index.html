@@ -7,12 +7,58 @@
     <link rel="shortcut icon" href="media/images/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-    <!-- Fixed Layout Block For Project Hover Image/Video -->
-    
+    <!-- Fixed Footer For Parallax Layout -->
+    <footer>
+        <div class="container">
+            <div id="footer-wrapper">
+                <div class="footer-widgets">
+                    <div class="footer-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Work</a>
+                            </li>
+                            <li>
+                                <a href="#">Studio</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-subscribe">
+                        <p>
+                            Get industry insights and creative inspiration straight to your inbox.
+                        </p>
+                        <form action="">
+                            <input type="email" placeholder="Email address" required>
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="shape1"></div>
+                <div class="shape2"></div>
+                <div class="shape3"></div>
+
+                <div class="footer-img">
+                    <img src="media/images/Sundown-logo.svg" alt="Sundown Logo">
+                </div>
+            
+                <div class="copyright-menu">
+                    <p>Copyright © Sundown Studio</p>
+                    <p><img src="media/images/globe-icon.svg" alt=""> &nbsp; Brooklyn, NY</p>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Locomotive Smooth Scrolling -->
     <div id="locomotive-scroll-wrapper">
         <header>
@@ -314,19 +360,60 @@
                         <div class="small-dot"></div>
                         <span>WHO WE WORK WITH</span>
                     </p>
-                </div>
 
-                <!-- Swiper -->
-                <div id="swiper">
-                    
+                    <!-- Swiper -->
+                    <div id="swiper-wrap">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="media/images/nike-logo.svg" alt="Nike Logo">
+                                    <p>
+                                        Retained Production support across retail and events in NY, CHI, LA. Creative Design, Design Management, Production/Project Management, and execution of work from concept to installation across the Country.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="media/images/converse-logo.svg" alt="Converse Logo">
+                                    <p>
+                                        Creative Concepting, Design, Design Management, Project Management, and execution of work from concept to installation across the Country. Cross functional communication and management of third party partners.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="media/images/arcteryx-logo.svg" alt="Arcteryx Logo">
+                                    <p>
+                                        Production and design along with install oversight and execution support for the SoHo store opening on Broadway St, New York. Also working on creative and production work for a new store opening in Glendale, California.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="media/images/hunter-logo.svg" alt="Hunter Logo">
+                                    <p>
+                                        Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. Concept design for Holiday boot customization events in stores across winter 2022.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="media/images/medialink-logo.svg" alt="MediaLink Logo">
+                                    <p>
+                                        Creative, Design, and Production Partner for 2023 CES. Scope Included creation of Branding Identity, Assets, and Digital Content, Design, Production design, Production oversight and Installation of client activations for IBM, Delta, Instacart, and more.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="media/images/afterpay-link.svg" alt="AfterPay Logo">
+                                    <p>
+                                        Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D Renders, Production design, Production/Partner oversight and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, & Revolve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        
+        <section id="footer"></section>
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
