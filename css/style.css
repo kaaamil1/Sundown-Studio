@@ -507,23 +507,6 @@ header nav h3 {
     cursor: none;
 }
 
-/* .swiper:hover .swiper-cursor {
-    display: block;
-}
-
-.swiper-cursor {
-    position: absolute;
-    top: -70%;
-    left: -9%;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 50%;
-    z-index: 100;
-    background-color: var(--orange);
-    opacity: 100%;
-    display: none;
-} */
-
 .swiper-slide {
     font-size: 18px;
     border-left: 1px solid rgb(190, 190, 190);
